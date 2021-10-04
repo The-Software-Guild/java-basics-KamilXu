@@ -63,14 +63,14 @@ public class RockPaperScissors {
                     System.out.println("tie");
                     draws++;
                 //Losses
-                }else if((choice == 1 && ai_choice == 2) || (choice == 2 && ai_choice == 3) || (choice == 3 && ai_choice == 1) || ){
+                }else if((choice == 1 && ai_choice == 2) || (choice == 2 && ai_choice == 3) || (choice == 3 && ai_choice == 1)){
                     System.out.println("computer win");
                     losses++;
                 //Wins
-                }else if(choice == 1 && ai_choice == 3) || (choice == 2 && ai_choice == 1) || (choice == 3 && ai_choice == 2)){
+                }else if((choice == 1 && ai_choice == 3) || (choice == 2 && ai_choice == 1) || (choice == 3 && ai_choice == 2)){
                     System.out.println("user win");
                     wins++;
-
+                }
                 //keeps decrementing until the user is out of rounds and incrementing on which round the user is on
                 round_num++;
                 rounds--;
