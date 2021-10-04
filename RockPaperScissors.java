@@ -58,34 +58,18 @@ public class RockPaperScissors {
 
                 //compare user and AI choices and add to score counter
                 int ai_choice = ai_array_choice + 1;
+                //Draws
                 if(choice == ai_choice){
                     System.out.println("tie");
                     draws++;
-                //rock vs paper
-                }else if(choice == 1 && ai_choice == 2){
+                //Losses
+                }else if((choice == 1 && ai_choice == 2) || (choice == 2 && ai_choice == 3) || (choice == 3 && ai_choice == 1) || ){
                     System.out.println("computer win");
                     losses++;
-                //rock vs scissors
-                }else if(choice == 1 && ai_choice == 3){
+                //Wins
+                }else if(choice == 1 && ai_choice == 3) || (choice == 2 && ai_choice == 1) || (choice == 3 && ai_choice == 2)){
                     System.out.println("user win");
                     wins++;
-                //paper vs rock
-                }else if(choice == 2 && ai_choice == 1){
-                    System.out.println("user win");
-                    wins++;
-                //paper vs scissors
-                }else if(choice == 2 && ai_choice == 3){
-                    System.out.println("computer win");
-                    losses++;
-                //scissors vs rock
-                }else if(choice == 3 && ai_choice == 1){
-                    System.out.println("computer win");
-                    losses++;
-                //scissors vs paper
-                }else if(choice == 3 && ai_choice == 2){
-                    System.out.println("user win");
-                    wins++;
-                }
 
                 //keeps decrementing until the user is out of rounds and incrementing on which round the user is on
                 round_num++;
