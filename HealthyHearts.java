@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class HealthyHearts {
 
-    private static void yourHealth() {
+    public static void yourHealth() {
         //ask for and take in users age
         Scanner askAge = new Scanner(System.in);
         System.out.print("What is your age?");
