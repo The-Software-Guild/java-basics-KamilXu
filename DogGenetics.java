@@ -1,4 +1,3 @@
-package JavaBasics;
 /*
     Name: Kamil Xu 
 */

@@ -1,7 +1,5 @@
-package JavaBasics;
 /*
     Name: Kamil Xu 
-    HealthyHearts
 */
 import java.util.Scanner;
 
